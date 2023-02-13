@@ -1,0 +1,24 @@
+.navbar {
+  height: 8vh;
+  position: fixed;
+  z-index: 20;
+  background: rgb(255, 255, 255);
+  
+}
+
+.flexPai {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.item {
+  margin-right: 10px;
+}

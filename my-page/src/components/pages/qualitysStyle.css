@@ -1,0 +1,49 @@
+.divPaiQuality {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.elementQ {
+  padding-top: 4rem;
+  height: 100vh;
+}
+
+.flexQuality {
+  display: flex;
+  margin: 3rem auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes identifier {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .blocksLanguages {
+    animation: identifier infinite 10s linear;
+  }
+}
+
+.blocksLanguages {
+  cursor: pointer;
+  margin: 0px 25px;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.apresentationLanguage {
+  max-width: 900px;
+  margin: 3rem auto;
+  background-color: rgba(141, 141, 141, 0.158);
+  padding: 10px;
+}
