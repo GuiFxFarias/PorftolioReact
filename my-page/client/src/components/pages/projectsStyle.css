@@ -9,7 +9,7 @@
 .project {
   width: 300px;
   height: 100px;
-  border: 1px solid red;
+  border: 1px dashed black;
 }
 
 .flexProject {
@@ -22,6 +22,31 @@
   width: 800px;
 }
 
+.flexProject a {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+
+}
+
 .project {
   margin: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 228, 0, 0.288);
+}
+
+.project h3 {
+  padding: 5px;
+  margin: 0;
+}
+
+.project h2{
+  margin: auto auto;
+}
+
+.later{
+  background-color: rgba(173, 173, 173, 0.733);
 }

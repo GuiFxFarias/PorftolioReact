@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { Element } from "react-scroll";
+import css from "../assets/image/css.png";
+import js from "../assets/image/Js.png";
+import ts from "../assets/image/react.png";
+import react from "../assets/image/ts.png";
 import "./qualitysStyle.css";
 
 function Qualitys() {
@@ -8,28 +12,44 @@ function Qualitys() {
   );
 
   function lang01() {
-    setLang("Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero obcaecati minus eaque, molestiae accusamus porro voluptate? Distinctio, asperiores in, eum exercitationem ipsum, tempora tempore assumenda temporibus enim error laboriosam et?");
+    setLang(
+      "Com a utlização do CSS3 deixamos o site mais bonito, responsivo e atrativo para os clientes"
+    );
   }
   function lang02() {
-    setLang("javascript");
+    setLang(
+      "Com a utilização do JavaScript realizamos suas interações e funcionalidade dentro do seu site, como enviar e-mail, clicar em alguma barra lateral, etc."
+    );
   }
   function lang03() {
-    setLang("CSSS");
+    setLang(
+      "Em ReactJs, se realiza toda a montagem do seu site pelo formato de componetização"
+    );
   }
   function lang04() {
-    setLang("TYPESCRIPT");
+    setLang(
+      "Com o TypeScript é praticamente o mesmo uso do JavaScript, porém, Ts seria uma linguagem com mais tipagem e não tao dinâmica como é o JavaScript"
+    );
   }
 
   return (
     <>
       <div className="divPaiQuality">
         <Element name="quality" className="elementQ">
-          <h1>Soft Skills</h1>
+          <h1>Habilidades</h1>
           <div className="flexQuality">
-            <div className="blocksLanguages" onClick={lang01}></div>
-            <div className="blocksLanguages" onClick={lang02}></div>
-            <div className="blocksLanguages" onClick={lang03}></div>
-            <div className="blocksLanguages" onClick={lang04}></div>
+            <div className="blocksLanguages" onClick={lang01}>
+              <img src={css} alt="" />
+            </div>
+            <div className="blocksLanguages" onClick={lang02}>
+              <img src={js} alt="" />
+            </div>
+            <div className="blocksLanguages" onClick={lang03}>
+              <img src={ts} alt="" />
+            </div>
+            <div className="blocksLanguages" onClick={lang04}>
+              <img src={react} alt="" />
+            </div>
           </div>
           <div className="apresentationLanguage">
             <p>{lang} </p>

@@ -17,6 +17,10 @@
   height: 80vh;
 }
 
+.elementC h1 {
+  margin-bottom: 4rem;
+}
+
 .map {
   width: 500px;
   height: 400px;
