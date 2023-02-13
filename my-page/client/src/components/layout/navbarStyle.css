@@ -1,0 +1,31 @@
+.navbar {
+  height: 8vh;
+  position: fixed;
+  z-index: 20;
+  background: rgb(255, 255, 255);
+}
+
+.flexPai {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.item {
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.item:hover {
+  transition: 0.5s;
+  text-decoration: line-through;
+  opacity: .7;
+}

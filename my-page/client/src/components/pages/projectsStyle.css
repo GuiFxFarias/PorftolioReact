@@ -1,0 +1,27 @@
+.apresentantionProject {
+  height: 50vh;
+}
+.elementP {
+  padding-top: 4rem;
+  height: 55vh;
+}
+
+.project {
+  width: 300px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.flexProject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 800px;
+}
+
+.project {
+  margin: 20px;
+}
