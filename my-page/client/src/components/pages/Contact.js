@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
-import nodemailer from 'nodemailer'
 import axios from "axios";
+import { handleSubmit } from "../../script";
 import "./contactStyle.css";
 
 function Contact() {
@@ -9,10 +9,16 @@ function Contact() {
       <Element name="contact" className="elementC">
         <h1>Entre em contato comigo</h1>
         <div className="contactFinal">
-          <form action="">
+          <form action={handleSubmit}>
             <div className="form">
               <fieldset>
                 <input type="text" name="name" id="name" placeholder="Nome" />
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Assunto"
+                />
                 <input
                   type="email"
                   name="email"

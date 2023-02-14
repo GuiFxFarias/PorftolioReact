@@ -26,6 +26,11 @@
   padding: 10px;
   width: 90%;
 }
+.form #subject {
+  margin-top: 1rem;
+  padding: 10px;
+  width: 90%;
+}
 
 .form #email {
   margin-top: 1rem;

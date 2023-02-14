@@ -30,6 +30,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-200}
               >
                 Qualitys
               </Link>
@@ -43,6 +44,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-200}
               >
                 Projects
               </Link>
