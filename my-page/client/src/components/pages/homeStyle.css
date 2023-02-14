@@ -1,5 +1,3 @@
-
-
 .apresent {
   max-width: 1000px;
   margin: auto;
@@ -19,3 +17,20 @@
 .hello {
   font-size: 16pt;
 }
+
+.h1{
+  display: inline;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.flex{
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.h1:hover{
+  color: rgb(0, 255, 234);
+}
+
+

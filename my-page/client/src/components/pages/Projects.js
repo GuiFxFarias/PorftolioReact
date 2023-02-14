@@ -5,7 +5,16 @@ function Projects() {
   return (
     <>
       <Element name="projects" className="elementP">
-        <h1>Projects</h1>
+        <div className="flexC">
+          <h1 className="h1">P</h1>
+          <h1 className="h1">r</h1>
+          <h1 className="h1">o</h1>
+          <h1 className="h1">j</h1>
+          <h1 className="h1">e</h1>
+          <h1 className="h1">t</h1>
+          <h1 className="h1">o</h1>
+          <h1 className="h1">s</h1>
+        </div>
         <div className="apresentantionProject">
           <div className="flexProject">
             <div className="project">

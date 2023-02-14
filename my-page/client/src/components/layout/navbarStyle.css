@@ -5,12 +5,17 @@
   background: rgb(255, 255, 255);
 }
 
+.name{
+  font-size: 2em;
+}
+
 .flexPai {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100vw;
+  border-bottom: 1px solid black;
 }
 
 .list {

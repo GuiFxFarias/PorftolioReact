@@ -18,7 +18,7 @@ function Navbar() {
                 smooth={true}
                 duration={500}
               >
-                Home
+                Apresentação
               </Link>
             </li>
             <li className="item">
@@ -32,7 +32,7 @@ function Navbar() {
                 duration={500}
                 offset={-200}
               >
-                Qualitys
+                Qualidades
               </Link>
             </li>
             <li className="item">
@@ -44,9 +44,9 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-200}
+                offset={-160}
               >
-                Projects
+                Projetos
               </Link>
             </li>
             <li className="item">
@@ -58,8 +58,9 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-250}
               >
-                Contact
+                Contato
               </Link>
             </li>
           </ul>

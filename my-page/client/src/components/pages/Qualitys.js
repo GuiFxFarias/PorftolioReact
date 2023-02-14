@@ -36,7 +36,19 @@ function Qualitys() {
     <>
       <div className="divPaiQuality">
         <Element name="quality" className="elementQ">
-          <h1>Habilidades</h1>
+        <div className="flexQ">
+          <h1 className="h1">H</h1>
+          <h1 className="h1">a</h1>
+          <h1 className="h1">b</h1>
+          <h1 className="h1">i</h1>
+          <h1 className="h1">l</h1>
+          <h1 className="h1">i</h1>
+          <h1 className="h1">d</h1>
+          <h1 className="h1">a</h1>
+          <h1 className="h1">d</h1>
+          <h1 className="h1">e</h1>
+          <h1 className="h1">s</h1>
+        </div>
           <div className="flexQuality">
             <div className="blocksLanguages" onClick={lang01}>
               <img src={css} alt="" />
