@@ -44,11 +44,11 @@ function Qualitys() {
             <div className="blocksLanguages" onClick={lang02}>
               <img src={js} alt="" />
             </div>
-            <div className="blocksLanguages" onClick={lang03}>
-              <img src={ts} alt="" />
-            </div>
             <div className="blocksLanguages" onClick={lang04}>
               <img src={react} alt="" />
+            </div>
+            <div className="blocksLanguages" onClick={lang03}>
+              <img src={ts} alt="" />
             </div>
           </div>
           <div className="apresentationLanguage">

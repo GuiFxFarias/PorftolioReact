@@ -1,10 +1,10 @@
-import { Link, Element, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./navbarStyle.css";
 
 function Navbar() {
   return (
     <>
-      <nav className="navbar" style={{borderBottom: '1px solid black'}}>
+      <nav className="navbar" style={{ borderBottom: "1px solid black" }}>
         <div className="flexPai">
           <h1 className="name">Guilherme Farias</h1>
           <ul className="list">

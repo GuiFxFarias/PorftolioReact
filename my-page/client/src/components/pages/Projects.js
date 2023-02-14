@@ -10,7 +10,11 @@ function Projects() {
           <div className="flexProject">
             <div className="project">
               <h3>Site para criação de uma rotina</h3>
-              <a href="https://routineweb-3ea27.web.app/" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://routineweb-3ea27.web.app/"
+                target="_blank"
+              >
                 Clique aqui
               </a>
             </div>
@@ -19,6 +23,7 @@ function Projects() {
               <a
                 href="https://guifxfarias.github.io/RodrigoFarias/certificados.html"
                 target="_blank"
+                rel="noreferrer"
                 style={{ marginBottom: "10px" }}
               >
                 Clique aqui
