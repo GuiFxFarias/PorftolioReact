@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
+  height: 100%;
   width: 100%;
 }
 
@@ -111,8 +112,8 @@
 }
 
 .elementC {
-  border-top: 2px solid black;
-  height: 60vh;
+  height: 66vh;
+
   background-color: rgba(44, 44, 44, 0.685);
 }
 
@@ -120,13 +121,17 @@
   margin-bottom: 4rem;
 }
 
+.mapDiv {
+  height: 694.05px;
+}
+
 .map {
   width: 800px;
-  height: 60vh;
+  height: 694.05px;
   border: none;
 }
 
-.flexC{
+.flexC {
   margin-bottom: 3rem;
   font-size: 1.5em;
 }
