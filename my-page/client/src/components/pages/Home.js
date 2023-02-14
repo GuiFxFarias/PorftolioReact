@@ -1,6 +1,4 @@
 import { Element } from "react-scroll";
-
-
 import "./homeStyle.css";
 
 function Home() {

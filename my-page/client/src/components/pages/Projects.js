@@ -21,7 +21,7 @@ function Projects() {
             <div className="project">
               <h3 style={{ margin: "auto" }}>Entrega de portfolio</h3>
               <a
-                href="https://guifxfarias.github.io/RodrigoFarias/certificados.html"
+                href="https://guifxfarias.github.io/RodrigoFarias/index.html"
                 target="_blank"
                 rel="noreferrer"
                 style={{ marginBottom: "10px" }}

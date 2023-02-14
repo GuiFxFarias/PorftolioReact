@@ -1,29 +1,70 @@
 import { Element } from "react-scroll";
-import axios from "axios";
-import { handleSubmit } from "../../script";
 import "./contactStyle.css";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    if (name === "" || email === "" || message === "") {
+      alert("Preencha os dados");
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    };
+
+    emailjs
+      .send(
+        "service_4rrqzne",
+        "template_fi3dxi7",
+        templateParams,
+        "Y5m61D_i3_5IlyitC"
+      )
+      .then(
+        (res) => {
+          console.log("Email enviado", res.status, res.text);
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (err) => {
+          console.log("ERRO: ", err);
+        }
+      );
+  }
+
   return (
     <>
       <Element name="contact" className="elementC">
         <h1>Entre em contato comigo</h1>
         <div className="contactFinal">
-          <form action={handleSubmit}>
+          <form onSubmit={sendEmail}>
             <div className="form">
               <fieldset>
-                <input type="text" name="name" id="name" placeholder="Nome" />
                 <input
                   type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Assunto"
+                  name="name"
+                  id="name"
+                  placeholder="Nome"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <textarea
                   name="message"
@@ -31,6 +72,8 @@ function Contact() {
                   cols="30"
                   rows="5"
                   placeholder="Mensagem"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <button type="submit" className="custom-btn btn-5">
                   Enviar mensagem
