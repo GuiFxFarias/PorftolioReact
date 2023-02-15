@@ -130,7 +130,7 @@ function Contact() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
-                <button type="submit" className="btn left">
+                <button type="submit" className="btn left" onFocus={Element}>
                   Enviar mensagem
                 </button>
               </fieldset>
