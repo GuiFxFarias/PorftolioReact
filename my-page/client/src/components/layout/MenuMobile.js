@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import "./menuMobileStyle.css";
 
-function MenuMobile({customClass}) {
+function MenuMobile({ customClass }) {
   return (
     <div className={`displayOff ${customClass}`}>
       <nav className="navbarM" style={{ borderBottom: "1px solid black" }}>
@@ -11,7 +11,7 @@ function MenuMobile({customClass}) {
               {" "}
               <Link
                 activeClass="active"
-                className="homeM"
+                className="homeM itens"
                 to="home"
                 spy={true}
                 smooth={true}
@@ -25,12 +25,12 @@ function MenuMobile({customClass}) {
               {" "}
               <Link
                 activeClass="active"
-                className="qualityM"
+                className="qualityM itens"
                 to="quality"
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-250}
+                offset={-190}
               >
                 Habilidades
               </Link>
@@ -39,7 +39,7 @@ function MenuMobile({customClass}) {
               {" "}
               <Link
                 activeClass="active"
-                className="projectsM"
+                className="projectsM itens"
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -53,7 +53,7 @@ function MenuMobile({customClass}) {
               {" "}
               <Link
                 activeClass="active"
-                className="contactM"
+                className="contactM itens"
                 to="contact"
                 spy={true}
                 smooth={true}

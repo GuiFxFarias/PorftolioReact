@@ -25,6 +25,7 @@
 
 .itemM {
   cursor: pointer;
+  display: block;
 
   transition: 0.5s;
   padding: 5px;
@@ -35,6 +36,11 @@
   transition: 0.5s;
   text-decoration: line-through;
   opacity: 0.7;
+}
+
+.itens{
+  width: 100%;
+  display: block;
 }
 
 @media screen and (max-width: 1080px) {

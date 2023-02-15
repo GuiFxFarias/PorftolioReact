@@ -1,5 +1,4 @@
 .form {
-  width: 35vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -108,6 +107,10 @@
   margin-bottom: 1em;
 }
 
+.form fieldset{
+  width: 60vw;
+}
+
 .formSub {
   display: flex;
   align-items: center;
@@ -122,13 +125,13 @@
   .flexC {
     font-size: 1em;
   }
-  .formSub{
+  .formSub {
     padding: 2em;
   }
-  .form{
-    width: 60vw;
+  .form {
+    width: 80vw;
   }
-  .btn{
+  .btn {
     height: 30px;
   }
 }
