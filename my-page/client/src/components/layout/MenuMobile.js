@@ -1,88 +1,73 @@
 import { Link } from "react-scroll";
-import "./navbarStyle.css";
-import { AiOutlineMenu } from "react-icons/ai";
-import MenuMobile from "./MenuMobile";
-import { useEffect, useState } from "react";
+import "./menuMobileStyle.css";
 
-function Navbar() {
-  const [menu, setMenu] = useState("off");
-
-  function handleMenu() {
-    if (menu === "off") {
-      setMenu("on");
-    } else {
-      setMenu("off");
-    }
-  }
-
+function MenuMobile({customClass}) {
   return (
-    <>
-      <nav className="navbar" style={{ borderBottom: "1px solid black" }}>
-        <div className="flexPai">
-          <h1 className="name">Guilherme Farias</h1>
-          <AiOutlineMenu className="iconMenu" onClick={handleMenu} />
-          <ul className="list">
-            <li className="item">
+    <div className={`displayOff ${customClass}`}>
+      <nav className="navbarM" style={{ borderBottom: "1px solid black" }}>
+        <div className="flexPaiM">
+          <ul className={`listM`}>
+            <li className="itemM">
               {" "}
               <Link
                 activeClass="active"
-                className="home"
+                className="homeM"
                 to="home"
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-250}
               >
                 Apresentação
               </Link>
             </li>
-            <li className="item">
+            <li className="itemM">
               {" "}
               <Link
                 activeClass="active"
-                className="quality"
+                className="qualityM"
                 to="quality"
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-200}
+                offset={-250}
               >
                 Habilidades
               </Link>
             </li>
-            <li className="item">
+            <li className="itemM">
               {" "}
               <Link
                 activeClass="active"
-                className="projects"
+                className="projectsM"
                 to="projects"
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-150}
+                offset={-190}
               >
                 Projetos
               </Link>
             </li>
-            <li className="item">
+            <li className="itemM">
               {" "}
               <Link
                 activeClass="active"
-                className="contact"
+                className="contactM"
                 to="contact"
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-220}
+                offset={-290}
               >
                 Contato
               </Link>
             </li>
           </ul>
         </div>
-        <MenuMobile customClass={menu} />
       </nav>
-    </>
+    </div>
   );
 }
 
-export default Navbar;
+export default MenuMobile;

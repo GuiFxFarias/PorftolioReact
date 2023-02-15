@@ -4,3 +4,11 @@
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   text-align: center;
 }
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+

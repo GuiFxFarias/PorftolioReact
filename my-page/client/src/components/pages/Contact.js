@@ -2,6 +2,8 @@ import { Element } from "react-scroll";
 import "./contactStyle.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -12,7 +14,16 @@ function Contact() {
     e.preventDefault();
 
     if (name === "" || email === "" || message === "") {
-      alert("Preencha os dados");
+      toast.warn("Preencha os dados", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
       return;
     }
 
@@ -35,9 +46,29 @@ function Contact() {
           setName("");
           setEmail("");
           setMessage("");
+          toast.success("Email enviado", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         },
         (err) => {
           console.log("ERRO: ", err);
+          toast.error("Email nao foi enviado", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         }
       );
   }
@@ -71,7 +102,7 @@ function Contact() {
       </div>
       <Element name="contact" className="elementC">
         <div className="contactFinal">
-          <form onSubmit={sendEmail}>
+          <form onSubmit={sendEmail} className="formSub">
             <div className="form">
               <fieldset>
                 <input
@@ -99,7 +130,7 @@ function Contact() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
-                <button type="submit" className="custom-btn btn-5">
+                <button type="submit" className="btn left">
                   Enviar mensagem
                 </button>
               </fieldset>
@@ -117,6 +148,20 @@ function Contact() {
           </div>
         </div>
       </Element>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover={false}
+        theme="dark"
+      />
+      {/* Same as */}
+      <ToastContainer />
     </>
   );
 }

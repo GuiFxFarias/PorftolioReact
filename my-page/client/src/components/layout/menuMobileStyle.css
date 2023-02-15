@@ -1,0 +1,50 @@
+.navbarM {
+  height: 8vh;
+  position: fixed;
+  z-index: 20;
+  background: rgb(255, 255, 255);
+}
+
+.nameM {
+  font-size: 2em;
+}
+
+.flexPaiM {
+  background-color: white;
+  display: block;
+  width: 100vw;
+  border-bottom: 1px solid black;
+}
+
+.listM {
+  list-style: none;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+.itemM {
+  cursor: pointer;
+
+  transition: 0.5s;
+  padding: 5px;
+  border-top: 1px solid black;
+}
+
+.itemM:hover {
+  transition: 0.5s;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1080px) {
+  .flexPaiM {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .displayOff{
+    display: none;
+  }
+}

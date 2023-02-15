@@ -16,21 +16,62 @@
 
 .hello {
   font-size: 16pt;
+  margin: 0px 40px;
 }
 
-.h1{
+.h1 {
   display: inline;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-.flex{
+.flex {
   margin-bottom: 20px;
   text-align: justify;
+  transition: 0.7s;
 }
 
-.h1:hover{
+.h1:hover {
   color: rgb(0, 255, 234);
 }
 
+@media screen and (max-width: 1025px) {
+  .flex {
+    margin-right: 30px;
+    width: 60vw;
+  }
 
+  .apresent .flex h1 {
+    font-size: 50pt;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .apresent {
+    height: 100vh;
+  }
+
+  .hello {
+    width: 100vw;
+    font-size: 12pt;
+  }
+
+  .flex {
+    margin-right: 30px;
+    margin-left: -70px;
+  }
+
+  .apresent .flex h1 {
+    font-size: 30pt;
+  }
+
+  .name {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .flexPai {
+    border-bottom: none;
+  }
+}

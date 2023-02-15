@@ -56,3 +56,34 @@
   margin-bottom: 2em;
   font-size: 1.5em;
 }
+
+@media screen and (max-width: 800px) {
+  .elementQ {
+    height: 80vh;
+    padding: 0px;
+  }
+
+  .flexQ {
+    font-size: 1em;
+  }
+
+  .blocksLanguages {
+    cursor: pointer;
+    margin: 0px 25px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .flexQuality {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .blocksLanguages {
+    cursor: pointer;
+    margin: 20px 25px;
+    width: 80px;
+    height: 80px;
+  }
+}

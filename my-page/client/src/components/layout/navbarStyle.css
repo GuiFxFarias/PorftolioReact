@@ -5,7 +5,7 @@
   background: rgb(255, 255, 255);
 }
 
-.name{
+.name {
   font-size: 2em;
 }
 
@@ -32,5 +32,36 @@
 .item:hover {
   transition: 0.5s;
   text-decoration: line-through;
-  opacity: .7;
+  opacity: 0.7;
+}
+
+.iconMenu {
+  font-size: 24pt;
+  display: none;
+}
+
+.off {
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
+@media screen and (max-width: 1080px) {
+  .flexPai {
+    width: 100vw;
+    height: 8vh;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .list {
+    display: none;
+  }
+
+  .iconMenu {
+    display: block;
+    cursor: pointer;
+  }
 }

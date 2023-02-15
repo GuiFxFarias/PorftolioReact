@@ -26,7 +26,6 @@
   width: 100%;
   color: black;
   text-decoration: none;
-
 }
 
 .project {
@@ -43,10 +42,46 @@
   margin: 0;
 }
 
-.project h2{
+.project h2 {
   margin: auto auto;
 }
 
-.later{
+.later {
   background-color: rgba(173, 173, 173, 0.733);
+}
+
+@media screen and (max-width: 1080px) {
+  .flexProject {
+    width: 100vw;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .elementP {
+    padding: 0px;
+    height: 80vh;
+  }
+  .project {
+    margin: 10px;
+    font-size: 10pt;
+    width: 180px;
+  }
+  .project h3 {
+    padding: 5px;
+    margin: auto;
+  }
+  .project a {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .project {
+    width: 120px;
+  }
 }
