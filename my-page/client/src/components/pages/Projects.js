@@ -21,7 +21,7 @@ function Projects() {
               <h3>Site para criação de uma rotina</h3>
               <a
                 rel="noreferrer"
-                href="https://routineweb-3ea27.web.app/"
+                href="https://project-routine.vercel.app/"
                 target="_blank"
               >
                 Clique aqui
