@@ -47,8 +47,8 @@ function Contact() {
           setEmail("");
           setMessage("");
           toast.success("Email enviado", {
-            position: "top-right",
-            autoClose: 5000,
+            position: "top-center",
+            autoClose: 3000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: false,
@@ -61,7 +61,7 @@ function Contact() {
           console.log("ERRO: ", err);
           toast.error("Email nao foi enviado", {
             position: "top-right",
-            autoClose: 5000,
+            autoClose: 3000,
             hideProgressBar: true,
             closeOnClick: true,
             pauseOnHover: false,
@@ -148,19 +148,6 @@ function Contact() {
           </div>
         </div>
       </Element>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover={false}
-        theme="dark"
-      />
-      {/* Same as */}
       <ToastContainer />
     </>
   );
