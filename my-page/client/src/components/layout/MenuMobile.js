@@ -33,7 +33,7 @@ function MenuMobile({ customClass }) {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-190}
+                offset={-200}
               >
                 Habilidades
               </Link>
@@ -47,7 +47,7 @@ function MenuMobile({ customClass }) {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-190}
+                offset={-200}
               >
                 Projetos
               </Link>
@@ -61,7 +61,7 @@ function MenuMobile({ customClass }) {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-290}
+                offset={-300}
               >
                 Contato
               </Link>
