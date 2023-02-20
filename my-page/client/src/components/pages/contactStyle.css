@@ -135,3 +135,10 @@
     height: 30px;
   }
 }
+
+@media screen and (max-width: 330px) {
+   .btn{
+    cursor: pointer;
+    height: 50px;
+  }
+}
