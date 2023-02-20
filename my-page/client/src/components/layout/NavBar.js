@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import "./navbarStyle.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import MenuMobile from "./MenuMobile";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Navbar() {
   const [menu, setMenu] = useState("off");
