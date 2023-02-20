@@ -79,8 +79,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <MenuMobile customClass={menu} />
       </nav>
+      <MenuMobile customClass={menu} />
     </>
   );
 }

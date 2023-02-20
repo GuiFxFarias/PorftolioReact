@@ -3,10 +3,13 @@ import "./menuMobileStyle.css";
 
 function MenuMobile({ customClass }) {
   return (
-    <div className={`displayOff ${customClass}`}>
-      <nav className="navbarM" style={{ borderBottom: "1px solid black" }}>
+    <div className={`displayOff `}>
+      <nav
+        className={`navbarM ${customClass}`}
+        style={{ borderBottom: "1px solid black" }}
+      >
         <div className="flexPaiM">
-          <ul className={`listM`}>
+          <ul className={`listM ${customClass}`}>
             <li className="itemM">
               {" "}
               <Link

@@ -40,13 +40,7 @@
   display: none;
 }
 
-.off {
-  display: none;
-}
 
-.on {
-  display: block;
-}
 
 @media screen and (max-width: 1080px) {
   .flexPai {

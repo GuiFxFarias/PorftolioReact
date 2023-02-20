@@ -4,10 +4,7 @@ import Contact from "./components/pages/Contact";
 import Home from "./components/pages/Home";
 import Projects from "./components/pages/Projects";
 import Qualitys from "./components/pages/Qualitys";
-
 import "./App.css";
-import MenuMobile from "./components/layout/MenuMobile";
-
 
 function App() {
   return (

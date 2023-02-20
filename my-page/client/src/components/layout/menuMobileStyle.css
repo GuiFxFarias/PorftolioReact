@@ -1,7 +1,7 @@
 .navbarM {
-  height: 8vh;
+  margin-top: 8vh;
   position: fixed;
-  z-index: 20;
+  height: 19vh;
   background: rgb(255, 255, 255);
 }
 
@@ -38,19 +38,25 @@
   opacity: 0.7;
 }
 
-.itens{
+.itens {
   width: 100%;
   display: block;
+}
+
+.off {
+  z-index: -1;
+  transition: all 1s ease-in;
+  opacity: 0;
+}
+
+.on {
+  z-index: 1;
+  transition: all 1s ease-in-out;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1080px) {
   .flexPaiM {
     width: 100vw;
-  }
-}
-
-@media screen and (min-width: 620px) {
-  .displayOff{
-    display: none;
   }
 }
