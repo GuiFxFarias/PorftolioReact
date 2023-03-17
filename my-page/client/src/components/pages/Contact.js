@@ -138,7 +138,7 @@ function Contact() {
           </form>
           <div className="mapDiv">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14884.000084251013!2d-47.9713124!3d-21.152397450000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b998e5290eeaeb%3A0x4793e7a85618e3d5!2sR.%20Francisco%20Carlos%2C%2094%20-%20Jardim%20Montreal%2C%20Sert%C3%A3ozinho%20-%20SP%2C%2014169-320!5e0!3m2!1spt-BR!2sbr!4v1676388125505!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d298002.9082426869!2d-48.04699896120536!3d-21.1460242073579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b99ea39873626f%3A0x5aab56ce876b1d1d!2sSert%C3%A3ozinho%20-%20Cruz%20das%20Posses%2C%20Sert%C3%A3ozinho%20-%20SP!5e1!3m2!1spt-BR!2sbr!4v1679045506654!5m2!1spt-BR!2sbr"
               title="meyMap"
               allowFullScreen=""
               loading="lazy"
