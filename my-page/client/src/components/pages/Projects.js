@@ -38,7 +38,7 @@ function Projects() {
                 Clique aqui
               </a>
             </div>
-            <div className="project later">
+            <div className="project">
             <h3 style={{ margin: "auto" }}>Aplicativo de finanças</h3>
               <a
                 href="https://expo.dev/accounts/fariasg/projects/meuApp/builds/018840ac-804a-4eeb-ad31-3ecce3c99a2a"
