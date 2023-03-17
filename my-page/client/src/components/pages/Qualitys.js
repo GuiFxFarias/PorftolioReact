@@ -28,7 +28,7 @@ function Qualitys() {
   }
   function lang04() {
     setLang(
-      "Com o TypeScript é praticamente o mesmo uso do JavaScript, porém, Ts seria uma linguagem com mais tipagem e não tao dinâmica como é o JavaScript"
+      "Com o TypeScript é praticamente o mesmo uso do JavaScript, porém, Ts seria uma linguagem com mais tipagem e não tão dinâmica como é o JavaScript"
     );
   }
 
