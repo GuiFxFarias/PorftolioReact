@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import "./projectsStyle.css";
 
+
 function Projects() {
   return (
     <>
