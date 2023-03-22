@@ -58,7 +58,7 @@ function Qualitys() {
 
   return (
     <>
-      <div className="divPaiQuality">
+      <div className="divPaiQuality" style={{backgroundColor: "red"}}>
         <Element name="quality" className="elementQ">
           <div className="flexQ">
             <h1 className="h1">H</h1>
@@ -72,6 +72,7 @@ function Qualitys() {
             <h1 className="h1">d</h1>
             <h1 className="h1">e</h1>
             <h1 className="h1">s</h1>
+            <h1 style={{color: "white"}}>ESTA PARTE DO SITE ESTÁ EM MANUTENÇÃO</h1>
           </div>
           <div className="flexQuality">
             {list.map((item) => (
